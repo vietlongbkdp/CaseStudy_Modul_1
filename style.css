@@ -10,7 +10,8 @@ body{
 }
 .header{
     height: 160px;
-
+    width: 100%;
+    position: fixed;
 }
 .header_imfo_bar{
     height: 40px;
@@ -19,7 +20,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     align-items: center;
     font-family: 'Poppins', sans-serif;
 
@@ -74,6 +75,9 @@ background-color: rgb(216, 226, 216);
     justify-content: space-between;
     align-items: center;
 }
+.noActive:hover{
+    cursor: not-allowed;
+}
 .navigation_logo img{
     width: 170px;
     height: auto;
@@ -109,9 +113,9 @@ background-color: rgb(216, 226, 216);
     display: block;
 }
 .navigation_search button:hover{
-    background-color: rgb(55, 141, 55);
+    background-color: rgb(209, 211, 209);
     color: #ffffff;
-    cursor: pointer;
+    cursor:not-allowed;
     transform: scale(1.1);
 }
 .navigation_search{
@@ -236,9 +240,10 @@ background-color: rgb(216, 226, 216);
     flex-direction: column;
     background-image: url(/image/wallpaperflare.com_wallpaper\ \(9\).jpg);
     background-repeat: repeat-y;
+    margin-top: 130px;
 }
 .produc_main_body_nav{
-    display: flex;
+    display: none;
     flex-direction: row;
     margin-left: 40px;
     margin-right: 40px;

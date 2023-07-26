@@ -45,7 +45,7 @@ for(let i = 0; i< listUser.length; i++){
 }
 
 function cancelUser(){
-window.location.href = 'home.html';
+window.location.href = './index.html';
 }
 //form input
 class ProductBeer{
@@ -113,16 +113,16 @@ setImage(value){
 }
 }
 
-var blanc = new ProductBeer(1, '1664 Blanc', 'Bia cao cấp', 5, 1, 22000, '/image/1664-Blanc-chai.jpg') 
-var carlsberg = new ProductBeer(2, 'Carlsberg Smooth Draught', 'Bia cao cấp', 5, 1, 20000, '/image/Carlsberg Smooth.jpg') 
-var tuborgGold = new ProductBeer(3, 'Tuborg Gold', 'Bia cao cấp', 4.9, 1, 18000, '/image/Tuborg-gold.png') 
-var tuborgIce = new ProductBeer(4, 'Tuborg Ice', 'Bia cao cấp', 4.3, 1, 18000, '/image/Tuborg-Ice.png') 
-var somersbyApple = new ProductBeer(5, 'Somersby Apple', 'Bia đặc biệt', 4.5, 1, 25000, '/image/Somersby_Apple.png') 
-var somersbyBlackBerry = new ProductBeer(6, 'Somersby BlackBerry', 'Bia đặc biệt', 4.5, 1, 25000, '/image/Somersby_Blackberry.png') 
-var huda = new ProductBeer(7, 'Huda', 'Bia phổ thông', 4.7, 1, 14000, '/image/Huda-Core.png') 
-var hudaIceBlast = new ProductBeer(8, 'Huda Ice Blast', 'Bia phổ thông', 4.7, 1, 16000,'/image/huda-ice-bottle.png') 
-var hudaGold = new ProductBeer(9, 'Huda Gold', 'Bia phổ thông', 4.7, 1, 18000, '/image/huda-gold-bottle.png') 
-var halida = new ProductBeer(10, 'Halida', 'Bia phổ thông', 4.5, 1, 14000, '/image/halida-bottle.png') 
+var blanc = new ProductBeer(1, '1664 Blanc', 'Bia cao cấp', 5, 1, 22000, './image/1664-Blanc-chai.jpg') 
+var carlsberg = new ProductBeer(2, 'Carlsberg Smooth Draught', 'Bia cao cấp', 5, 1, 20000, './image/Carlsberg Smooth.jpg') 
+var tuborgGold = new ProductBeer(3, 'Tuborg Gold', 'Bia cao cấp', 4.9, 1, 18000, './image/Tuborg-gold.png') 
+var tuborgIce = new ProductBeer(4, 'Tuborg Ice', 'Bia cao cấp', 4.3, 1, 18000, './image/Tuborg-Ice.png') 
+var somersbyApple = new ProductBeer(5, 'Somersby Apple', 'Bia đặc biệt', 4.5, 1, 25000, './image/Somersby_Apple.png') 
+var somersbyBlackBerry = new ProductBeer(6, 'Somersby BlackBerry', 'Bia đặc biệt', 4.5, 1, 25000, './image/Somersby_Blackberry.png') 
+var huda = new ProductBeer(7, 'Huda', 'Bia phổ thông', 4.7, 1, 14000, './image/Huda-Core.png') 
+var hudaIceBlast = new ProductBeer(8, 'Huda Ice Blast', 'Bia phổ thông', 4.7, 1, 16000,'./image/huda-ice-bottle.png') 
+var hudaGold = new ProductBeer(9, 'Huda Gold', 'Bia phổ thông', 4.7, 1, 18000, './image/huda-gold-bottle.png') 
+var halida = new ProductBeer(10, 'Halida', 'Bia phổ thông', 4.5, 1, 14000, './image/halida-bottle.png') 
 
 var listProduct = JSON.parse(localStorage.getItem("listProduct")) || [blanc, carlsberg, tuborgGold, tuborgIce, somersbyApple, somersbyBlackBerry, huda, hudaIceBlast, hudaGold, halida]
 var TempCart=JSON.parse(localStorage.getItem("TempCart")) || [];
@@ -173,8 +173,8 @@ var strID = document.getElementById('form_input_id').value;
 var strNamProduct = document.getElementById('form_input_product_name').value;
 var strType = document.getElementById('form_input_typeof').value;
 var strAlcohol = document.getElementById('form_input_id_alcohol').value;
-var strPrices = document.getElementById('form_input_id_prices').value;
-var strQty = document.getElementById('form_input_id_qty').value;
+var strPrices = document.getElementById('form_input_id_qty').value;
+var strQty = document.getElementById('form_input_id_prices').value;
 var strImage = document.getElementById('form_input_id_image').value;
 
     if((strID =='')||(strNamProduct =='')||(strType =='')||(strAlcohol =='')||(strQty =='')||(strPrices =='')||(strImage =='')){
@@ -250,7 +250,7 @@ function addProductToCart(index){
 var strCart =''
 let count = 0;
 for(let i=0; i<listProduct.length; i++){
-    if(listProduct[index] == TempCart[i]){
+    if(listProduct[index] === TempCart[i]){
         count++;
         break;
     }

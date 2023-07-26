@@ -56,6 +56,23 @@
                     </button>
                 </div>
             </div>
+            <div id="showCart" onmouseleave="closeCart_bar()">
+                <div class="tilleCart">
+                    <p>Giỏ hàng</p>
+                </div>
+                <div id="mainCart">
+    
+                </div>
+                <div class="footerCart">
+                    <div class="qtyTotal">
+                        <label>Số lượng:</label><p id="qtyTotalShow"></p>
+                    </div>
+                    <div class="pricesTotal">
+                        <label>Thành tiền</label><p style="color: red;" id="pricesTotalShow">12355454 đồng</p>
+                        <button id="btnOrder" onclick="btnOrder()">Oder</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- ------------------------------------------------------------------------------------------- -->
@@ -76,23 +93,7 @@
         </div>
     </div>
 
-        <div id="showCart" onmouseleave="closeCart_bar()">
-            <div class="tilleCart">
-                <p>Giỏ hàng</p>
-            </div>
-            <div id="mainCart">
-
-            </div>
-            <div class="footerCart">
-                <div class="qtyTotal">
-                    <label>Số lượng:</label><p id="qtyTotalShow"></p>
-                </div>
-                <div class="pricesTotal">
-                    <label>Thành tiền</label><p style="color: red;" id="pricesTotalShow">12355454 đồng</p>
-                    <button id="btnOrder" onclick="btnOrder()">Oder</button>
-                </div>
-            </div>
-        </div>
+        
 
     <script src="./main.js"></script>
 </body>

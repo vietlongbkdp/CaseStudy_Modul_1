@@ -458,7 +458,7 @@ body{
     transform: scale(1.1);
 }
 #showCart{
-    position: absolute;
+    position:absolute;
     background-color: rgb(212, 219, 142);
     width: 420px;
     display: none;
@@ -468,8 +468,9 @@ body{
     border-style: solid;
     border-color: #000000;
     border-width: 1px;
-    right: 13%;
-    top: 5%;
+    margin-left: 60%;
+    /* right: 13%;
+    top: 5%; */
 }
 .tilleCart p{
     text-align: center;

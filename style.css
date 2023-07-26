@@ -15,7 +15,7 @@ body{
 }
 .header_imfo_bar{
     height: 40px;
-    background-color: #efefef;
+    background-color: #a19f9f;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,25 +35,25 @@ body{
 }
 .header_imfo_bar_mail{
     display: flex;
-    color: #afafaf;
+    color: #313131;
     font-size: 20px;
     align-items: center;
 }
 .header_imfo_bar_mail a{
-    color: #afafaf;
+    color: #313131;
     text-decoration: none;
     font-size: 15px;
     padding-left: 10px;
 }
 .header_imfo_bar_phone{
     display: flex;
-    color: #afafaf;
+    color: #313131;
     font-size: 20px;
     align-items: center;
     margin-left: 30px;
 }
 .header_imfo_bar_phone a{
-    color: #afafaf;
+    color: #313131;
     text-decoration: none;
     font-size: 15px;
     padding-left: 3%;
@@ -64,13 +64,13 @@ body{
 }
 .header_imfo_bar_contact a{
     padding: 10px;
-    color: #afafaf;
+    color: #313131;
     font-size: 30px;
 }
 .navigation{
     height: 90px;
     display: flex;
-background-color: rgb(216, 226, 216);
+    background-color: rgb(145, 202, 228);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +81,7 @@ background-color: rgb(216, 226, 216);
 .navigation_logo img{
     width: 170px;
     height: auto;
+    margin-left: 30px;
 
 }
 .navigation_main{
@@ -88,17 +89,17 @@ background-color: rgb(216, 226, 216);
     justify-content: space-around;
 }
 .navigation_main a{
-    color: #505050;
+    color: #313131;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     padding-left: 75px;
 }
 .navigation_main a:hover{
-    color: green;
+    color: rgb(255, 0, 0);
     cursor: pointer;
 }
 .navigation_search button{
-    color: #505050;;
+    color: #313131;;
     background-color: #ffffff;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -113,10 +114,14 @@ background-color: rgb(216, 226, 216);
     display: block;
 }
 .navigation_search button:hover{
-    background-color: rgb(209, 211, 209);
+    background-color: rgb(98, 89, 224);
     color: #ffffff;
     cursor:not-allowed;
     transform: scale(1.1);
+
+}
+#nav_cart:hover{
+    cursor: pointer;
 }
 .navigation_search{
     /* margin-right: 100px; */
@@ -146,7 +151,7 @@ background-color: rgb(216, 226, 216);
 }
 .footer{
     height: 120px;
-    background-color: rgb(216, 226, 216);
+    background-color: rgb(145, 202, 228);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,13 +159,13 @@ background-color: rgb(216, 226, 216);
 
 }
 .footer a{
-    color: #505050;
+    color: #313131;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .footer p{
-    color: #505050;
+    color: #313131;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -169,7 +174,7 @@ background-color: rgb(216, 226, 216);
     padding-top: 10px;
 }
 .login_main_body{
-    background-image: url(/image/wallpaperflare.com_wallpaper\ \(3.jpg);
+    background-image: url('./image/qwallpaperflare.com_wallpaper.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,8 +185,8 @@ background-color: rgb(216, 226, 216);
 
 .login_form{
     background-color: #659758;
-    height: 150px;
-    width: 350px;
+    height: 200px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,8 +216,9 @@ background-color: rgb(216, 226, 216);
     border: none;
     border-radius: 8px;
     height: 30px;
-    min-width: 200px;
+    min-width: 250px;
     margin-left: 30px;
+    padding-left: 10px;
 }
 .login_form_button{
     display: flex;
@@ -238,7 +244,8 @@ background-color: rgb(216, 226, 216);
 .product_main_body{
     display: flex;
     flex-direction: column;
-    background-image: url(/image/wallpaperflare.com_wallpaper\ \(9\).jpg);
+    background-image: url('./image/qwallpaperflare.com_wallpaper.jpg');
+    background-size: contain;
     background-repeat: repeat-y;
     margin-top: 130px;
 }
@@ -342,17 +349,21 @@ background-color: rgb(216, 226, 216);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('./image/qwallpaperflare.com_wallpaper.jpg');
+    background-repeat: repeat-y;
+    background-position: center;
 }
 .form_input{
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
     margin: 30px;
-    background-color: #d3cdcd;
+    background-color: #669ce4;
     width: 500px;
     align-items: center;
     border-radius: 20px;
     padding: 30px;
+    margin-top: 230px;
 
 }
 .form_input_datainput{
@@ -371,6 +382,8 @@ background-color: rgb(216, 226, 216);
 .form_input_datainput input{
     min-width: 300px;
     margin-left: 30px;
+    padding: 5px;
+    border-radius: 5px;
 
 
 }
@@ -446,7 +459,7 @@ background-color: rgb(216, 226, 216);
 }
 #showCart{
     position: absolute;
-    background-color: rgb(230, 204, 170);
+    background-color: rgb(212, 219, 142);
     width: 420px;
     display: none;
     flex-direction: column;

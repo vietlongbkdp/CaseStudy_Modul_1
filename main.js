@@ -37,9 +37,9 @@ for(let i = 0; i< listUser.length; i++){
         document.getElementById('login_form_txt_input').value = '';
     }
     else{
+
         document.getElementById('login_form_txt_input').value = '';
         document.getElementById('login_form_txt_passwords').value = '';
-
     }
 }
 }
@@ -189,6 +189,7 @@ var strImage = document.getElementById('form_input_id_image').value;
     clearDataForm();
 
 
+
 }
 function clearDataForm(){
 document.getElementById('form_input_id').value = '';
@@ -247,7 +248,7 @@ document.getElementById('qty_cart').innerText = indexCart;
 }
 }
 function addProductToCart(index){
-var strCart =''
+// var strCart =''
 let count = 0;
 for(let i=0; i<listProduct.length; i++){
     if(listProduct[index] === TempCart[i]){
@@ -262,6 +263,7 @@ for(let i=0; i<listProduct.length; i++){
 TempCart.push(listProduct[index]);
 renderCart();
 localStorage.setItem("TempCart", JSON.stringify(TempCart))
+alert("Sản phẩm đã được thêm giỏ hàng")
 }
 }
 renderProduct();
@@ -281,12 +283,14 @@ for(let i=0; i<TempCart.length; i++){
 document.getElementById('mainCart').innerHTML = strCart;
 sumProduct();
 sumPrices();
+
 }
 function btnClearProductCart_1(index){
 TempCart.splice(index, 1);
 localStorage.removeItem("TempCart");
 localStorage.setItem("TempCart", JSON.stringify(TempCart));
 renderCart();
+alert("Sản phẩm đã được xoá khỏi giỏ hàng")
 }
 function changeQtyCart(index){
     TempCart[index].prices = document.getElementById(`numberProductCart${index}`).value;

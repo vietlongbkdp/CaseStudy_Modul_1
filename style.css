@@ -245,8 +245,9 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url('./image/qwallpaperflare.com_wallpaper.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: repeat-y;
+    background-position: center;
     margin-top: 130px;
 }
 .produc_main_body_nav{
